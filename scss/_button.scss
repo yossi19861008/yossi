@@ -1,0 +1,30 @@
+.button{
+  display: inline-block;
+  position: relative;
+  border: none;
+  padding: 12px 64px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 32px;
+  transition: 0.2s;
+  background-color: #999;
+  border: 2px solid #999;
+  -webkit-appearance: none;
+  &.sm{
+    border: 1px solid #999;
+    background-color: transparent;
+    padding: 2px 24px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #999;
+    &:hover{
+      border: 1px solid #fff;
+    }
+  }
+  &:hover {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+}

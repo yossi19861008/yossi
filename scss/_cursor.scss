@@ -1,0 +1,11 @@
+.ityped-cursor {
+  font-size: 1em;
+  opacity: 1;
+  animation: blink 0.5s infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+  100% {
+      opacity: 0;
+  }
+}

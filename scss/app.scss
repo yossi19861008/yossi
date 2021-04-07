@@ -1,0 +1,194 @@
+$primary: #ddd;
+$secondary: #333;
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体,
+    YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: $primary;
+  color: $secondary;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section {
+  position: relative;
+  padding: 120px 0;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+  &.right_cube::after {
+    position: absolute;
+    content: "";
+    left: -20%;
+    top: -35%;
+    transform: translateY(-35%);
+    width: 1300px;
+    height: 1300px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  &.left_cube::after {
+    position: absolute;
+    content: "";
+    left: -20%;
+    top: -35%;
+    transform: translateY(-35%);
+    width: 1300px;
+    height: 1300px;
+    background-color: $primary;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  &.bg_none {
+    background-color: transparent;
+  }
+  &.bg_dark {
+    background-color: $primary;
+  }
+}
+
+.global_ttl {
+  position: relative;
+  font-size: 30px;
+  padding: 0 0 10px;
+  margin-bottom: 50px;
+  letter-spacing: 0.1em;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 40%;
+    bottom: 0;
+    left: 0;
+    background-color: $secondary;
+  }
+  span {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+.main_txt {
+  line-height: 1.5rem;
+  font-size: 16px;
+  &.small{
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.scroll_top_wrap {
+  position: fixed;
+  transition: 0.2s;
+  right: -300px;
+  bottom: 50px;
+  z-index: 50;
+  &.show {
+    right: 50px;
+  }
+  .scroll_button {
+    display: block;
+    padding: 8px 24px;
+    background: rgba(#000, 0.2);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0, 6, 0.76, -0.5);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  span {
+    display: block;
+  }
+}
+
+.action {
+  position: relative;
+  transition: 1s;
+  opacity: 0;
+  bottom: -100px;
+  &.delay {
+    transition: 1s ease-in-out 0.1s;
+  }
+
+  &.scrollin {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.side_left_action {
+  position: relative;
+  transition: 1s;
+  opacity: 0;
+  left: -100px;
+  &.delay {
+    transition: 1s ease-in-out 0.1s;
+  }
+
+  &.scrollin {
+    opacity: 1;
+    left: 0;
+  }
+}
+.side_right_action {
+  position: relative;
+  transition: 1s;
+  opacity: 0;
+  right: -100px;
+  &.delay {
+    transition: 1s ease-in-out 0.1s;
+  }
+
+  &.scrollin {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@media (max-width: 1170px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+  section {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 768px) {
+  .global_ttl::after{
+    width: 80%;
+  }
+  .mob_hidden {
+    display: none;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .scroll_top_wrap {
+    bottom: 20px;
+    z-index: 998;
+    &.show {
+      right: 20px;
+    }
+    .open & .scroll_button {
+      background: rgba(#fff, 0.9);
+      color: #333;
+    }
+  }
+}
+
+@import "reset";
+@import "button";
+@import "header";
+@import "about";
+@import "skill";
+@import "contact";
+@import "footer";
+@import "cursor";
+@import "product";
+@import "thanks";

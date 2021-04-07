@@ -1,0 +1,61 @@
+<?php
+$lists=[
+
+$list1=[
+'id'=>1,
+'name'=>'YossiBoards',
+'desc'=>'Laravelで作成しました。
+基本的なCRUD、多対多でのテーブル設計をしていいね機能やフォロー機能、
+ブックマーク機能を実装しています。',
+'url'=>'https://help.sakura.ad.jp/206053312/',
+'img'=>'yossiboard2',
+],
+$list2=[
+  'id'=>2,
+'name'=>'YossiBoards',
+'desc'=>'UIはTwitterを参考に作成しました。',
+'url'=>'https://techacademy.jp/magazine/29513',
+'img'=>'yossiboards',
+],
+$list3=[
+  'id'=>3,
+'name'=>'YossiMatch',
+'desc'=>'現在開発中で、ティンダー風のマッチングアプリを目標としています。
+左右スワイプでのLIKE判定や、マッチングした者同士のリアルタイムチャットの
+実装を考えています。',
+'url'=>'開発中',
+'img'=>'yossimatch',
+],
+$list4=[
+  'id'=>4,
+'name'=>'GlobalBridge',
+'desc'=>'初めて、友達のWEBサイトをPHPで作成しました。',
+'url'=>'http://global-bridge-jp.com/',
+'img'=>'global',
+],
+$list5=[
+  'id'=>5,
+'name'=>'MaisonDeSante',
+'desc'=>'現在の職場で作成したLPです。wordpressを使用しています。',
+'url'=>'https://help.sakura.ad.jp/206053312/',
+'img'=>'maisondesante',
+],
+$list6=[
+  'id'=>6,
+'name'=>'居酒屋 いろり庵',
+'desc'=>'居酒屋の看板を作成しました。',
+'url'=>'グラフィック',
+'img'=>'irorian1',
+],
+$list7=[
+  'id'=>7,
+'name'=>'居酒屋 直球',
+'desc'=>'居酒屋のメニューを作成しました。',
+'url'=>'グラフィック',
+'img'=>'cyokkyuu1',
+],
+
+];
+$all=$lists;
+
+?>
